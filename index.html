@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Riya Marwaha | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1115; /* deep slate */
+      --panel:#151923; /* card bg */
+      --text:#e9edf1; /* primary text */
+      --muted:#a9b1bd; /* secondary text */
+      --brand:#8ab4f8; /* accent */
+      --brand-soft:#2a3958; /* accent subtle */
+      --chip:#232a38;
+      --maxw:980px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{opacity:.9}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:32px 20px 64px}
+    header{display:flex;flex-direction:column;gap:20px;margin-bottom:28px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .name{font-size:28px;font-weight:700;letter-spacing:.2px}
+    nav{display:flex;flex-wrap:wrap;gap:14px}
+    nav a{padding:8px 12px;border-radius:10px;background:transparent;color:var(--muted);font-weight:500}
+    nav a:hover{background:var(--brand-soft);color:var(--text)}
+    .contact{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{background:var(--chip);color:var(--muted);padding:8px 12px;border-radius:999px;font-size:14px}
+    .summary{background:linear-gradient(180deg,rgba(138,180,248,.07),transparent);border:1px solid rgba(138,180,248,.18);border-radius:16px;padding:18px 18px;margin-top:6px;color:var(--muted)}
+    section{margin:36px 0}
+    h2{font-size:15px;letter-spacing:.12em;color:#bcd0ff;font-weight:700;margin:0 0 16px 0;text-transform:uppercase}
+    .card{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:16px 16px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px}
+    @media (min-width:760px){
+      .grid-2{grid-template-columns:1fr 1fr}
+      .grid-3{grid-template-columns:repeat(3,1fr)}
+    }
+    .role{display:flex;flex-direction:column;gap:6px}
+    .role .title{font-weight:650}
+    .role .meta{color:var(--muted);font-size:14px}
+    ul{padding-left:18px;margin:8px 0 0 0}
+    li{margin:6px 0;color:var(--muted)}
+    .proj{display:flex;flex-direction:column;gap:6px}
+    .proj .stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+    .badge{border:1px solid rgba(255,255,255,.14);padding:5px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    footer{margin-top:44px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .pill{padding:6px 10px;border-radius:10px;background:var(--brand-soft);color:#dfe7ff}
+    .divider{height:1px;background:rgba(255,255,255,.08);margin:24px 0}
+    /* subtle hover */
+    .hoverable{transition:transform .1s ease, box-shadow .2s ease}
+    .hoverable:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="topbar">
+        <div class="name">Riya Marwaha</div>
+        <nav>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="contact">
+        <span class="chip">Massachusetts, USA</span>
+        <a class="chip" href="mailto:rmarwaha@umassd.edu">rmarwaha@umassd.edu</a>
+        <a class="chip" href="tel:+19783377272">(978) 337-7272</a>
+        <a class="chip" href="https://www.linkedin.com/in/riyamarwaha" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+      <div class="summary">MBA candidate in Business Analytics (Dec 2025). I turn messy data into decisions—combining SQL/R with Tableau & Power BI to build KPI dashboards, predictive models, and concise stories executives can act on.</div>
+    </header>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="card hoverable role">
+          <div class="title">University of Massachusetts Dartmouth — MBA, Business Analytics (GPA 3.81)</div>
+          <div class="meta">Jan 2024 – Dec 2025 · Dartmouth, MA</div>
+          <ul>
+            <li>Coursework: Business Analytics & Data Mining, Statistics, Data Visualization, Business Intelligence</li>
+          </ul>
+        </div>
+        <div class="card hoverable role">
+          <div class="title">University of Delhi — B.Com (Hons) Accounting (GPA 3.8)</div>
+          <div class="meta">Jul 2020 – May 2023 · Delhi, India</div>
+          <ul>
+            <li>Coursework: Financial, Managerial, and Corporate Accounting</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <div class="grid">
+        <div class="card hoverable role">
+          <div class="title">Graduate Assistant — Charlton College of Business</div>
+          <div class="meta">Jan 2025 – Present · Dartmouth, MA</div>
+          <ul>
+            <li>Analyzed 100+ research articles with Excel & ML, producing trend insights.</li>
+            <li>Designed PSALSAR framework mapping 7 QC/ML areas for research prioritization.</li>
+            <li>Built Tableau dashboards highlighting research gaps for faculty.</li>
+          </ul>
+        </div>
+        <div class="card hoverable role">
+          <div class="title">Business Center Tutor — Academic Resource Center</div>
+          <div class="meta">Sep 2024 – May 2025 · Dartmouth, MA</div>
+          <ul>
+            <li>Mentored 50+ students in financial analysis, SQL, and Excel, improving performance by 15%.</li>
+            <li>Created structured progress plans, achieving 90% retention among assigned students.</li>
+          </ul>
+        </div>
+        <div class="card hoverable role">
+          <div class="title">Accounting Data Analyst Intern — K.R. Company</div>
+          <div class="meta">May 2021 – Dec 2023 · Delhi, India</div>
+          <ul>
+            <li>Analyzed $1M+ transactions to identify cost overruns and revenue leakage.</li>
+            <li>Improved reporting accuracy 20% with SQL + Tableau dashboards.</li>
+            <li>Cut reporting errors 15% through QA & validation protocols.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid grid-2">
+        <div class="card hoverable proj">
+          <div class="title">Retail Fashion Boutique Analytics</div>
+          <div class="meta">SQL · R · Tableau · ML (Sep 2025)</div>
+          <ul>
+            <li>Engineered features from 2,176 transactions; built predictive models (82% accuracy, AUC 0.78) to flag returns.</li>
+            <li>KPI dashboards improved ROI ~12% and exposed markdown-driven profit erosion; cut return costs ~15%.</li>
+          </ul>
+          <div class="stack">
+            <span class="badge">SQL</span><span class="badge">R</span><span class="badge">Tableau</span><span class="badge">ML</span>
+          </div>
+        </div>
+        <div class="card hoverable proj">
+          <div class="title">Fraud Transaction Detection</div>
+          <div class="meta">R · Predictive Modeling (Jan–May 2025)</div>
+          <ul>
+            <li>Balanced classes, engineered features, and compared models; Random Forest achieved 96% accuracy.</li>
+          </ul>
+          <div class="stack">
+            <span class="badge">R</span><span class="badge">Random Forest</span><span class="badge">ROC/AUC</span>
+          </div>
+        </div>
+        <div class="card hoverable proj">
+          <div class="title">Marketing Campaign Performance Analysis</div>
+          <div class="meta">Tableau · Excel (Sep–Dec 2024)</div>
+          <ul>
+            <li>Cleaned and modeled campaign data; identified ROI drivers and satisfaction trends.</li>
+            <li>Delivered recommendations to optimize budget allocation and regional performance.</li>
+          </ul>
+          <div class="stack">
+            <span class="badge">Tableau</span><span class="badge">Excel</span><span class="badge">KPI Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card">
+        <div class="skills">
+          <span class="badge">SQL</span>
+          <span class="badge">R</span>
+          <span class="badge">Predictive Modeling</span>
+          <span class="badge">Data Mining</span>
+          <span class="badge">Tableau</span>
+          <span class="badge">Tableau Prep</span>
+          <span class="badge">Power BI</span>
+          <span class="badge">Excel (Advanced)</span>
+          <span class="badge">VBA</span>
+          <span class="badge">Power Query</span>
+          <span class="badge">Power Pivot</span>
+          <span class="badge">MySQL</span>
+          <span class="badge">Tally ERP</span>
+          <span class="badge">MS Office 365</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p class="muted">I’m actively looking for Fall 2025 internships and 2026 full-time roles in Business/Data/Financial Analytics.</p>
+        <p>
+          <a class="pill" href="mailto:rmarwaha@umassd.edu">Email</a>
+          <a class="pill" href="https://www.linkedin.com/in/riyamarwaha" target="_blank" rel="noreferrer">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <span>© <span id="y"></span> Riya Marwaha</span>
+      <span>Built with HTML & CSS · Hosted on GitHub Pages</span>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
