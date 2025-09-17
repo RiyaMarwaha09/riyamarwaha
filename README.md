@@ -1,8 +1,5 @@
 # 📈 From ROI to Revenue: Marketing Insights Unveiled  
 
-![Tableau Badge](https://img.shields.io/badge/Tool-Tableau-blue?logo=tableau&logoColor=white)  
-![Project Type](https://img.shields.io/badge/Project-Marketing%20Analytics-orange)  
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)  
 
 ---
 
