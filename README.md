@@ -30,18 +30,19 @@ The dataset includes:
 
 ## 📸 Dashboard Previews  
 
-### 📊 Campaign Metrics Page  
-![Campaign Metrics](assets/campaign_metrics.png)  
+### 📊 Average ROI Dashboard  
+![Average ROI](assets/Average%20ROI%20Riya%20Marwaha.png)  
 
 ---
 
-### 👥 Audience Insights Page  
-![Audience Insights](assets/audience_insights.png)  
+### 📊 Top Revenue-Generating Product Categories by Region  
+![Revenue by Region](assets/Top%20Revenue-Generating%20Product%20Categories%20by%20Region.png)  
 
 ---
 
 ### 💰 ROI to Revenue Dashboard  
-<img src="assets/roi_dashboard.png" width="100%" alt="ROI Dashboard">  
+<img src="assets/ROI%20to%20revenue%20dashboard.png" width="100%" alt="ROI Dashboard">  
+
 
 ---
 
